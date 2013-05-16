@@ -1,0 +1,13 @@
+{
+  "name": "child",
+  "repo": "mikanda/child",
+  "description": "A simple component to add/remove/get child nodes.",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "LGPL",
+  "scripts": [
+    "index.js"
+  ]
+}
