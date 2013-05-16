@@ -8,7 +8,7 @@
     $ component install mikanda/child
 
 
-## Examples
+## Example
 
     var c = child(el)
       .add(child1)
