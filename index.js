@@ -12,7 +12,7 @@ function Child(el) {
  * or all, if no index is defined
  */
 Child.prototype.get = function (index) {
-  return index ? this.el.childNodes[index] : this.el.childNodes;
+  return index !== undefined ? this.el.childNodes[index] : this.el.childNodes;
 };
 
 /*
