@@ -28,14 +28,11 @@ Child.prototype.getAll = function () {
  */
 Child.prototype.add = function (element, index) {
   var referenceElement;
-  if (index === null || index === undefined) {
+  if (index === null || index === undefined || index > this.getAll().length) {
     this.el.appendChild(element);
-  }else if (index === 0) {
+  } else {
     referenceElement = this.get(index);
     this.el.insertBefore(element, referenceElement);
-  } else {
-    referenceElement = this.get(index-1);
-    this.el.insertAfter(element, referenceElement);
   }
   return this;
 };
